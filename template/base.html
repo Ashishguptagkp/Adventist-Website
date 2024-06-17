@@ -1,0 +1,345 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NGO Website</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static "style.css" %}" />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="/images/pngwing.com.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+
+
+    <!-- topbar  -->
+     
+     <div class="bg-primary text-light">
+      <div class="container">
+        <div class="d-flex">
+          <div class="col">
+           
+            <div class="social gap-2">
+             <a href="tel:6392008441" target="_blank"><i class="ti ti-phone"data-aos="zoom-in"
+              data-aos-duration="3000" ></i></a>
+              </div>
+          </div>
+
+          <div class="col">
+            <div class="social-1 gap-2">
+       <a href=""><i class="ti ti-brand-facebook" data-aos="zoom-in"
+        data-aos-duration="3000"></i></a>
+       <a href=""><i class="ti ti-brand-instagram" data-aos="zoom-in"
+        data-aos-duration="3000"></i></a>
+       <a href=""><i class="ti ti-brand-twitter" data-aos="zoom-in"
+        data-aos-duration="3000"></i></a>
+      </div>
+    </div>
+    </div>
+  </div>
+    </div>
+
+    <!-- topbar end  -->
+
+
+
+
+
+
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-lg bg-light sticky-top">
+      <!-- Container wrapper -->
+      <div class="container">
+        <!-- Toggle button -->
+        <button
+          data-mdb-collapse-init
+          class="navbar-toggler"
+          type="button"
+          data-mdb-target="#navbarCenteredExample"
+          aria-controls="navbarCenteredExample"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="ti ti-menu-2"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarCenteredExample"
+        >
+          <!-- logo -->
+          <div class="logo d-flex align-items-center">
+            <a href="/"> <img
+              src="{% static "/images/logo.png" %}"
+              alt=""
+              width="100%"
+              height="60px"
+              data-aos="zoom-in"
+                data-aos-duration="3000"
+            />
+          </a>
+          </div>
+
+          <!-- Left links -->
+          <ul class="navbar-nav d-flex gap-3 align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                data-mdb-dropdown-init
+                class="nav-link"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                aria-expanded="false"
+              >
+                Our Department <i class="ti ti-chevron-down fs-6"></i>
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item" href="/childgallery">Children Ministry</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/women">Women's Department</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/youth">Youth Department</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/help">Health Department</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/commni">Communication Department</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/health">Sabbath School and Personal Ministries</a>
+                </li>
+              </ul>
+            </li>
+
+
+            <li class="nav-item">
+              <a class="nav-link" href="/event">Events</a>
+            </li>
+
+            
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                data-mdb-dropdown-init
+                class="nav-link"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                aria-expanded="false"
+              >
+                Gallery <i class="ti ti-chevron-down fs-6"></i>
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+              <li>
+                <a class="dropdown-item" href="/child">Children Ministry</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="/wome">Women Empowerment</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="/you">Youth Department</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="/sti">Health Department</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="/com">Communication Department</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="/sabbat">Sabbath School and Personal Ministries</a>
+              </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/study">Study Material</a>
+            </li>
+            <li class="nav-item">
+              <a href="/contact"
+                ><button type="submit" class="btn-secondary" data-aos="zoom-in"
+                data-aos-duration="3000" >
+                  Contact Us
+                </button></a
+              >
+            </li>
+          </ul>
+
+          <!-- Left links -->
+        </div>
+        <!-- Collapsible wrapper -->
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+
+
+    {% block content %}
+    
+    {% endblock content %}    
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer section  -->
+    <section id="Back" class="py-5">
+        <div class="container-fluid">
+          <div class="container">
+            <div class="row py-5">
+              <div class="col-md-4">
+                <img src="/images/pngwing.com.png" class="w-25" alt="" data-aos="zoom-in"
+                data-aos-duration="3000"/>
+               
+                <h4 class="fw-bold">Adventist</h4>
+                <p class="pt-4">
+                  EASTERN UTTAR PRADESH <br> SECTION OF SEVENTH <br>DAY ADVENTISTS. 
+                </p>
+  
+                <div class="fbIcon gap-2 pt-4">
+                  <i class="ti ti-brand-facebook" data-aos="zoom-in" data-aos-duration="3000"></i>
+                  <i class="ti ti-brand-instagram" data-aos="zoom-in" data-aos-duration="3000"></i>
+                  <i class="ti ti-brand-twitter" data-aos="zoom-in" data-aos-duration="3000"></i>
+  
+                  <i class="ti ti-brand-linkedin" data-aos="zoom-in" data-aos-duration="3000"></i>
+                  <i class="ti ti-brand-youtube" data-aos="zoom-in" data-aos-duration="3000"></i>
+                </div>
+              </div>
+  
+              <div class="col-md-4 links">
+                <h3>Information Links</h3>
+                <div class="py-4">
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="event.html">Events</a></li>
+                <li><a href="childgallery.html">Gallery</a></li>
+                <li><a href="study.html">Study Material</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                </div>
+              </div>
+  
+              <div class="col-md-4">
+                <h3>Contact Us</h3>
+  
+                <div class="d-flex gap-3">
+                  <div class="icons">
+                    <i class="ti ti-home" data-aos="zoom-in" data-aos-duration="3000"></i>
+                  </div>
+                  <div>
+                    S-8/114 E 26, Indra Nagar Colony <br>Khajuri, Varanasi 221002, Uttar Pradesh
+                  </div>
+                </div>
+                <br>
+  
+                <div class="d-flex gap-3">
+                  <div class="icons">
+                  <a href="tel:6392008441"><i class="ti ti-phone" data-aos="zoom-in" data-aos-duration="3000"></i></a>
+                  </div>
+                  <div class="ancor">
+                    <a href="tel:6392008441">+91 6392008441</a>
+                  </div>
+                </div>
+                <br>
+  
+                <div class="d-flex gap-3">
+                  <div class="icons">
+                    <i class="ti ti-mail" data-aos="zoom-in" data-aos-duration="3000"></i>
+                  </div>
+                  <div class="ancor">
+                    <a href="#">presidenteups@niuadventist.org</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <hr />
+            <div class="d-flex justify-content-between">
+              <p>© Copyright 2024 Adventist - All Right's Reserved</p>
+  
+              <p>
+                Design & Developed By -
+                <a href="https://www.juneco.in" target="_blank" class="text-light"
+                  >Juneco.in</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>
+
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="{% static 'script.js' %}"></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.umd.min.js"
+      ></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+      <script>
+        AOS.init();
+      </script>
+    </body>
+  </html>
+  
