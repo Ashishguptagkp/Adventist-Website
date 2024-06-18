@@ -30,16 +30,16 @@
             <div class="row py-5  gap-5">
                 <div class="col-md-5">
 
-                    <form action="" method="post">
+                    <form action="" id="contactForm" method="post" >
                     <div class="form-outline d-flex" data-mdb-input-init>
-                        <input type="text" id="formControlLg" class="form-control form-control-lg" />
+                        <input type="text" name="name" id="formControlLg" class="form-control form-control-lg" />
                         <label class="form-label" for="formControlLg">Name</label>
                         <i class="ti ti-user-filled p-3"></i>
                     </div>
 
                 <div class="py-5">
                 <div class="form-outline d-flex" data-mdb-input-init>
-                    <input type="text" id="formControlLg" class="form-control form-control-lg" />
+                    <input type="text" name="email" id="formControlLg" class="form-control form-control-lg" />
                     <label class="form-label" for="formControlLg">Email</label>
                     <i class="ti ti-mail-filled p-3"></i>
                  </div>
@@ -47,14 +47,14 @@
               
         
               <div class="form-outline d-flex" data-mdb-input-init>
-                <input type="text" id="formControlLg" class="form-control form-control-lg" />
+                <input type="text" name="address" id="formControlLg" class="form-control form-control-lg" />
                 <label class="form-label" for="formControlLg">Subject</label>
                 <i class="ti ti-folder-filled p-3"></i>
               </div>
     
               <div class="py-5">
                 <div class="form-outline d-flex" data-mdb-input-init>
-                  <textarea class="form-control" id="textAreaExample" rows="6"></textarea>
+                  <textarea class="form-control" name="message" id="textAreaExample" rows="6"></textarea>
                   <label class="form-label" for="textAreaExample">Message</label>
                   <i class="ti ti-pencil p-3"></i>
                 </div> 

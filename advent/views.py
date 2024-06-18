@@ -1,7 +1,8 @@
 from django.shortcuts import render, redirect
 from django.http import JsonResponse
 
-from .models import *
+
+from website.models import *
 
 # Create your views here.
 
@@ -73,3 +74,7 @@ def handleContactForm(request):
         
         return JsonResponse(data={'status':200})
     
+def gallery(request, slug):
+    category = Category.objects.get(slug=slug)
+    images = Gallery.objects.filter(category=category)
+    return render(request, 'gallery.html', {'images':images, 'category':category})

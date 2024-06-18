@@ -10,6 +10,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css" integrity="sha512-Woz+DqWYJ51bpVk5Fv0yES/edIMXjj3Ynda+KWTIkGoynAMHrqTcDUQltbipuiaD5ymEo9520lyoVOo9jCQOCA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="{% static "style.css" %}" />
     
     <link
@@ -55,7 +56,7 @@
 
           <div class="col">
             <div class="social-1 gap-2">
-       <a href=""><i class="ti ti-brand-facebook" data-aos="zoom-in"
+       <a href="https://www.facebook.com/EasternUPAdventist/"><i class="ti ti-brand-facebook" data-aos="zoom-in"
         data-aos-duration="3000"></i></a>
        <a href=""><i class="ti ti-brand-instagram" data-aos="zoom-in"
         data-aos-duration="3000"></i></a>
@@ -175,28 +176,15 @@
               >
                 Gallery <i class="ti ti-chevron-down fs-6"></i>
               </a>
-              <ul
+             <ul
                 class="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-              <li>
-                <a class="dropdown-item" href="/child">Children Ministry</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="/wome">Women Empowerment</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="/you">Youth Department</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="/sti">Health Department</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="/com">Communication Department</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="/sabbat">Sabbath School and Personal Ministries</a>
-              </li>
+            {% for item in categories %}
+            <li>
+              <a class="dropdown-item" href="/gallery/{{item.slug}}">{{item.name}}</a>
+            </li>
+            {% endfor %}
               </ul>
             </li>
             <li class="nav-item">
@@ -249,7 +237,7 @@
                 </p>
   
                 <div class="fbIcon gap-2 pt-4">
-                  <i class="ti ti-brand-facebook" data-aos="zoom-in" data-aos-duration="3000"></i>
+                 <a href="https://www.facebook.com/EasternUPAdventist/"><i class="ti ti-brand-facebook" data-aos="zoom-in" data-aos-duration="3000"></i></a>
                   <i class="ti ti-brand-instagram" data-aos="zoom-in" data-aos-duration="3000"></i>
                   <i class="ti ti-brand-twitter" data-aos="zoom-in" data-aos-duration="3000"></i>
   
@@ -324,6 +312,7 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>
 
       <!-- Swiper JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" integrity="sha512-Ixzuzfxv1EqafeQlTCufWfaC6ful6WFqIz4G+dWvK0beHw0NVJwvCKSgafpy5gwNqKmgUfIBraVwkKI+Cz0SEQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
       <script src="{% static 'script.js' %}"></script>
       <script

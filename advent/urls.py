@@ -6,6 +6,7 @@ urlpatterns = [
     path('about',views.about, name='about'),
     path('child',views.child, name='child'),
     path('childgallery',views.children, name='childgallery'),
+    path('gallery/<str:slug>',views.gallery, name='gallery'),
     path('com',views.com, name='com'),
     path('commni',views.commni, name='commni'),
     path('contact',views.contact, name='contact'),

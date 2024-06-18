@@ -642,3 +642,13 @@ nav a{
 #couterBG{
     background-color: var(--deepblue);
 }
+
+.img-box img{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+}
+
+textarea{
+    color: white !important;
+}

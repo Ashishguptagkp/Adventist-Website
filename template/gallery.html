@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="container py-5">
+    <h1 class="text-center fw-bold py-3">{{category.name}}</h1>
+    <div class="d-flex gap-3 justify-content-center py-3 flex-wrap">
+        {% for i in images %}
+        <div class="img-box">
+            <a href="/media/{{i.image}}" data-lightbox="image-1"><img src="/media/{{i.image}}" class="rounded" alt=""></a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock content %}
